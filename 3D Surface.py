@@ -372,14 +372,9 @@ ax3d = plt.gca(projection="3d")
 plt.title('3D Surface', fontsize=16)
 temp, time=np.meshgrid(np.linspace(50,150,100),np.meshgrid(0,300,300))
 z1=7.21138-7.21138*np.exp(-7*10**9*np.exp(-84104/8.314/(273.15+temp))*time)
-z2=None  #???
-for i in range(1,300):  # 时间
-    # z2表示：z1-（当前时刻的z1与上一时刻的z1的差值）*k
-    z2=z1[i]-(z1[i]-z1[i-1])*3.4*10**10*np.exp(-96068/(8.314*temp))
 
 for te in temp:
     ax3d.plot_surface(temp,time,z1,cstride=20,rstride=20,cmap='jet')
-    ax3d.plot_surface(temp,time,z2,cstride=20,rstride=20,cmap='summer')
 
 ax3d.set_xlabel("temp")
 ax3d.set_ylabel("time")
