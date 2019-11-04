@@ -14,7 +14,7 @@ import sklearn.linear_model as lm
 import sklearn.metrics as sm
 from mpl_toolkits.mplot3d import axes3d
 
-#
+
 # # 读取数据
 # files_A = ['80_degrees_Celsius.csv',
 #            '90_degrees_Celsius.csv',
@@ -147,23 +147,23 @@ from mpl_toolkits.mplot3d import axes3d
 # x=1/t.reshape(-1,1)
 # y=np.log(-k)
 #
-# # plt.figure("ln(k)-1/t A", facecolor="yellow")
-# #
-# # # 获取当前坐标轴
-# # ax = plt.gca()
-# # ax.spines['top'].set_color('none')
-# # ax.spines['right'].set_color('none')
-# # # 设置刻度定位器
-# # maj_loc = eval("plt.AutoLocator()")
-# # ax.xaxis.set_major_locator(maj_loc)
-# # plt.xlabel("1/t", fontsize=14)
-# # plt.ylabel("ln(k)", fontsize=14)
-# # plt.xlim(0.0026, 0.0029)
-# # plt.ylim(-6.5, -4)
-# #
-# # plt.title('ln(k)-1/t', fontsize=16)
-# # plt.grid(linestyle=":")
-# # plt.scatter(x, y, s=70, color="dodgerblue")
+# plt.figure("ln(k)-1/t A", facecolor="yellow")
+#
+# # 获取当前坐标轴
+# ax = plt.gca()
+# ax.spines['top'].set_color('none')
+# ax.spines['right'].set_color('none')
+# # 设置刻度定位器
+# maj_loc = eval("plt.AutoLocator()")
+# ax.xaxis.set_major_locator(maj_loc)
+# plt.xlabel("1/t", fontsize=14)
+# plt.ylabel("ln(k)", fontsize=14)
+# plt.xlim(0.0026, 0.0029)
+# plt.ylim(-6.5, -4)
+#
+# plt.title('ln(k)-1/t', fontsize=16)
+# plt.grid(linestyle=":")
+# plt.scatter(x, y, s=70, color="dodgerblue")
 #
 # model = lm.LinearRegression()
 # # 训练模型
@@ -182,23 +182,23 @@ from mpl_toolkits.mplot3d import axes3d
 # k=np.array(k)
 # x=1/t.reshape(-1,1)
 # y=np.log(-k)
-# # plt.figure("ln(k)-1/t B", facecolor="yellow")
-# #
-# # # 获取当前坐标轴
-# # ax = plt.gca()
-# # ax.spines['top'].set_color('none')
-# # ax.spines['right'].set_color('none')
-# # # 设置刻度定位器
-# # maj_loc = eval("plt.AutoLocator()")
-# # ax.xaxis.set_major_locator(maj_loc)
-# # plt.xlabel("1/t", fontsize=14)
-# # plt.ylabel("ln(k)", fontsize=14)
-# # plt.xlim(0.0026, 0.0029)
-# # plt.ylim(-6.5, -4)
-# #
-# # plt.title('ln(k)-1/t', fontsize=16)
-# # plt.grid(linestyle=":")
-# # plt.scatter(x, y, s=70, color="dodgerblue")
+# plt.figure("ln(k)-1/t B", facecolor="yellow")
+#
+# # 获取当前坐标轴
+# ax = plt.gca()
+# ax.spines['top'].set_color('none')
+# ax.spines['right'].set_color('none')
+# # 设置刻度定位器
+# maj_loc = eval("plt.AutoLocator()")
+# ax.xaxis.set_major_locator(maj_loc)
+# plt.xlabel("1/t", fontsize=14)
+# plt.ylabel("ln(k)", fontsize=14)
+# plt.xlim(0.0026, 0.0029)
+# plt.ylim(-6.5, -4)
+#
+# plt.title('ln(k)-1/t', fontsize=16)
+# plt.grid(linestyle=":")
+# plt.scatter(x, y, s=70, color="dodgerblue")
 #
 # model = lm.LinearRegression()
 # # 训练模型
@@ -211,30 +211,30 @@ from mpl_toolkits.mplot3d import axes3d
 #
 #
 #
-# ln(k)-1/t关系图 B
+# # ln(k)-1/t关系图 B
 # k=[linear_regression_result[0][1][1],linear_regression_result[1][1][1],linear_regression_result[2][1][1]]
 # t=[80+273.15,90+273.15,100+273.15]
 # t=np.array(t)
 # k=np.array(k)
 # x=1/t.reshape(-1,1)
 # y=np.log(-k)
-# # plt.figure("ln(k)-1/t B", facecolor="yellow")
-# #
-# # # 获取当前坐标轴
-# # ax = plt.gca()
-# # ax.spines['top'].set_color('none')
-# # ax.spines['right'].set_color('none')
-# # # 设置刻度定位器
-# # maj_loc = eval("plt.AutoLocator()")
-# # ax.xaxis.set_major_locator(maj_loc)
-# # plt.xlabel("1/t", fontsize=14)
-# # plt.ylabel("ln(k)", fontsize=14)
-# # plt.xlim(0.0026, 0.0029)
-# # plt.ylim(-6.5, -4)
-# #
-# # plt.title('ln(k)-1/t', fontsize=16)
-# # plt.grid(linestyle=":")
-# # plt.scatter(x, y, s=70, color="dodgerblue")
+# plt.figure("ln(k)-1/t B", facecolor="yellow")
+#
+# # 获取当前坐标轴
+# ax = plt.gca()
+# ax.spines['top'].set_color('none')
+# ax.spines['right'].set_color('none')
+# # 设置刻度定位器
+# maj_loc = eval("plt.AutoLocator()")
+# ax.xaxis.set_major_locator(maj_loc)
+# plt.xlabel("1/t", fontsize=14)
+# plt.ylabel("ln(k)", fontsize=14)
+# plt.xlim(0.0026, 0.0029)
+# plt.ylim(-6.5, -4)
+#
+# plt.title('ln(k)-1/t', fontsize=16)
+# plt.grid(linestyle=":")
+# plt.scatter(x, y, s=70, color="dodgerblue")
 #
 # model = lm.LinearRegression()
 # # 训练模型
@@ -355,10 +355,10 @@ from mpl_toolkits.mplot3d import axes3d
 # print('R2',R2)
 # print('斜率',model.coef_[0])
 # print('截距',model.intercept_.tolist())
-
-# 代入得到
-# r2 = 3.4*10**10*np.exp(-96068/(R*T))
-
+#
+# # 代入得到
+# # r2 = 3.4*10**10*np.exp(-96068/(R*T))
+#
 
 # Finally
 
@@ -367,19 +367,18 @@ from mpl_toolkits.mplot3d import axes3d
 
 # 三维曲面的绘制
 plt.figure("3D Surface", facecolor="lightgreen")
-
 ax3d = plt.gca(projection="3d")
 plt.title('3D Surface', fontsize=16)
-temp, time=np.meshgrid(np.linspace(50,150,100),np.meshgrid(0,300,300))
-z1=7.21138-7.21138*np.exp(-7*10**9*np.exp(-84104/8.314/(273.15+temp))*time)
+temp, time=np.meshgrid(np.linspace(0,150,150),np.meshgrid(0,300,300))
+z1=1-np.exp(-7*10**9*np.exp(-84104/8.314/(273.15+temp))*time)
 
 for te in temp:
     ax3d.plot_surface(temp,time,z1,cstride=20,rstride=20,cmap='jet')
+    # ax3d.plot_surface(temp,time,z2,cstride=20,rstride=20,cmap='summer')
 
 ax3d.set_xlabel("temp")
 ax3d.set_ylabel("time")
-ax3d.set_zlabel("c")
-
+ax3d.set_zlabel("1")
 
 plt.legend()
 plt.show()
